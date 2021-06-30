@@ -14,26 +14,25 @@ http://80443.com/admin/
 
 1.下载源码zip并解压。
 
-2.把upload目录下的所有文件上传至空间根目录下。同时确认以下目录或文件属性为(777)可写模式。(Win 主机的可以略过此步)
-
-chmod 777 ./admin/config/cfg_database.php
-chmod 777 ./static/js
-chmod 777 ./install
-chmod 777 ./admin/data
-chmod 777 ./admin/data/backup
-chmod 777 ./admin/data/cache
-chmod 777 ./admin/data/conf
-chmod 777 ./admin/data/db
-chmod 777 ./admin/data/session
-chmod 777 ./admin/data/lang
-chmod 777 ./admin/data/log
-chmod 777 ./admin/data/plan
-chmod 777 ./admin/data/update
-chmod 777 ./admin/tpls/cache
-chmod 777 ./admin/tpls/compile
-chmod 777 ./admin/tpls/tpls/admin
-chmod 777 ./admin/tpls/tpls/main
-chmod 777 ./index.html
+2.把upload目录下的所有文件上传至空间根目录下。同时确认以下目录或文件属性为(777)可写模式。(Win 主机的可以略过此步)  
+    chmod 777 ./admin/config/cfg_database.php  
+    chmod 777 ./static/js  
+    chmod 777 ./install  
+    chmod 777 ./admin/data  
+    chmod 777 ./admin/data/backup  
+    chmod 777 ./admin/data/cache  
+    chmod 777 ./admin/data/conf  
+    chmod 777 ./admin/data/db  
+    chmod 777 ./admin/data/session  
+    chmod 777 ./admin/data/lang  
+    chmod 777 ./admin/data/log  
+    chmod 777 ./admin/data/plan  
+    chmod 777 ./admin/data/update  
+    chmod 777 ./admin/tpls/cache  
+    chmod 777 ./admin/tpls/compile  
+    chmod 777 ./admin/tpls/tpls/admin  
+    chmod 777 ./admin/tpls/tpls/main  
+    chmod 777 ./index.html  
 
 3. 通过浏览器访问 http://您的域名/install/，根据提示填写 mysql 配置信息、管理员账号信息
 
