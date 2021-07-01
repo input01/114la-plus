@@ -61,25 +61,18 @@ function LocalData_callback(){
 		head.insertBefore(script, head.firstChild);
 		
 	}
-	var i=0;
-	var hockLocal = window.setInterval(function(){
-		i++;
-		if(Cookie.get(CityCookieName) || i<30){
-			//console.log(i);
-			window.clearInterval(hockLocal);
-			var CookieArray = Cookie.get(CityCookieName).split(",");
-			var cityid = CookieArray[1];
-			if(cityid){
-				getData(cityid);
-			}else{
-				getData(defaultCID);
-			}
-		}else if(i>30 && typeof Local_city_arr=="undefined"){
+	// 城市导航网址注入
+	if(Cookie.get(CityCookieName)){
+		var CookieArray = Cookie.get(CityCookieName).split(",");
+		var cityid = CookieArray[1];
+		if(cityid){
+			getData(cityid);
+		}else{
 			getData(defaultCID);
-			window.clearInterval(hockLocal);
-			return;
 		}
-	},13);
+	}else{
+		getData(defaultCID);
+	}
 })();
 
 Date.prototype.format = function(format){
