@@ -196,17 +196,17 @@ document.onclick = function(e){
 				L=T = obj.innerHTML;
 			}
 		}
-		KeywordCount({
-			u: L,
-			n: T,
-			q: 0
-		});
+		// KeywordCount({
+		// 	u: L,
+		// 	n: T,
+		// 	q: 0
+		// });
 		UserTrack.add(obj);
     }
 	Config.Track.forEach(function(element){
-		if(tid==element[0]){
-			KeywordCount(element[1]);
-		}
+		// if(tid==element[0]){
+		// 	KeywordCount(element[1]);
+		// }
 	});
 };
 
@@ -362,13 +362,13 @@ var qucikSearch = (function(){
 			Ajax(api+ '&rd=' + new Date().getTime(), callback);
         }, timer);
 		
-        countDelay = window.setTimeout(function(){
-			KeywordCount({
-			type: "qs",
-			word: query,
-			url: window.location.href
-			}, "http://www.tjj.com/click.php");
-		},1000);
+  //       countDelay = window.setTimeout(function(){
+		// 	KeywordCount({
+		// 	type: "qs",
+		// 	word: query,
+		// 	url: window.location.href
+		// 	}, "http://www.tjj.com/click.php");
+		// },1000);
         
         function callback(xhr){
             if (xhr.responseText == '') {
@@ -399,13 +399,13 @@ var HoverTab = function(el,fn){
 				}
 				el["on" + element] = function(){
 					fn();
-					if(rel){
-						KeywordCount({
-							u: rel,
-							n: rel,
-							q: 0
-						});
-					}
+					// if(rel){
+					// 	KeywordCount({
+					// 		u: rel,
+					// 		n: rel,
+					// 		q: 0
+					// 	});
+					// }
 				}
 				break;
 			case "mouseover":
@@ -415,13 +415,13 @@ var HoverTab = function(el,fn){
 					}
 					waitInterval = window.setTimeout(function(){
 						fn();
-						if(rel){
-							KeywordCount({
-								u: rel,
-								n: rel,
-								q: 0
-							});
-						}
+						// if(rel){
+						// 	KeywordCount({
+						// 		u: rel,
+						// 		n: rel,
+						// 		q: 0
+						// 	});
+						// }
 					}, MouseDelayTime);
 					
 					
@@ -492,7 +492,7 @@ $("#bm_tab li").each(function(el){
             function createTabBox(){
 				    var newNode = document.createElement("div");
 					newNode.id=boxid;
-					var newHtml = '<iframe width="100%" height="272" frameborder="0" scrolling="no" allowtransparency="true" src="'+url+'"></iframe>';
+					var newHtml = '<iframe width="100%" height="272" frameborder="0" scrolling="yes" allowtransparency="true" src="'+url+'"></iframe>';
 					newNode.innerHTML=newHtml;
 					$("#bb .box").el.insertBefore(newNode,$("#bb .box").el.firstChild);
 					if(noCache) {
@@ -828,12 +828,12 @@ var miniSearch = (function(){
         }
     });
 	function count(){
-		KeywordCount({
-			type: I,
-			word: Q.value,
-			url: window.location.href,
-			key: cache.is("CLICK_BS_BTN")?"B":13
-		},"http://www.tjj.com/click.php");
+		// KeywordCount({
+		// 	type: I,
+		// 	word: Q.value,
+		// 	url: window.location.href,
+		// 	key: cache.is("CLICK_BS_BTN")?"B":13
+		// },"http://www.tjj.com/click.php");
 		cache.remove("CLICK_BS_BTN");
 	}
 	$("#f_btn input").on("click",function(el){
@@ -913,30 +913,30 @@ $("#tool-tab li").each(function(el){
 
 
 
-function KeywordCount(keyword, Counturl){
-    if (!keyword || keyword =="") {
-        return
-    }
-    var url = Counturl || "http://www.tjj.com/index";
+// function KeywordCount(keyword, Counturl){
+//     if (!keyword || keyword =="") {
+//         return
+//     }
+//     var url = Counturl || "http://www.tjj.com/index";
 	
 	
-    var rd = new Date().getTime()
-    var Count = new Image();
-    var countVal = "";
-	for (var i in keyword) {
+//     var rd = new Date().getTime()
+//     var Count = new Image();
+//     var countVal = "";
+// 	for (var i in keyword) {
 
-			if(i=='u'){
-				countVal += ('?'+ i +'=' + encodeURIComponent(keyword[i]));
-			}else{
-				countVal += ('&' + i +'=' + encodeURIComponent(keyword[i]));
-			}
-	}
-	if(url=="http://www.tjj.com/index"){
-		Count.src = url+countVal+'&i='+rd;
-	}else{
-		Count.src = url + "?i=" + rd + countVal;
-	}
-}
+// 			if(i=='u'){
+// 				countVal += ('?'+ i +'=' + encodeURIComponent(keyword[i]));
+// 			}else{
+// 				countVal += ('&' + i +'=' + encodeURIComponent(keyword[i]));
+// 			}
+// 	}
+// 	if(url=="http://www.tjj.com/index"){
+// 		Count.src = url+countVal+'&i='+rd;
+// 	}else{
+// 		Count.src = url + "?i=" + rd + countVal;
+// 	}
+// }
 
 DOMReady(function(){
 	if(Browser.isIE){			  
