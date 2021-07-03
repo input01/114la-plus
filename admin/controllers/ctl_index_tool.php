@@ -111,7 +111,7 @@ class ctl_index_tool
             $data['name'] = $site_name;
 
             $site_url = (empty($_POST['url'])) ? '' : $_POST['url'];
-            if (empty($site_url), $site_url))
+            if (empty($site_url))
             {
                 throw new Exception('网站地址不能为空或请以http://开头', 10);
             }
