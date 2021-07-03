@@ -17,7 +17,19 @@
         <div class="con clearfix">
             <h1 id="logo"><a href="<{$URL}>"><img src="<{$URL}>/static/images/logo.gif" alt="" /></a></h1>
             <div class="searchform">
+                <form id="searchForm" action="http://115.com/s" method="get" target="_blank">
+                    <a class="label" href="http://115.com"><img width="105" height="35" alt="115搜索" src="<{$URL}>/static/images/s/115.gif"></a>
+                    <input type="text" name="q" class="text" autocomplete="off">
+                    <input type="submit" class="submit" value="115搜索">
+                    <input type="hidden" name="tn" value="ylmf_4_pg">
+                    <input type="hidden" name="ch" value="6">
+                </form>
                 <div class="ctrl">
+                    <form id="ctrl_form">
+                        <label for="s115_item"><input class="radio" type="radio" value="s115" name="search_select"  checked="checked" id="s115_item" />115搜索</label>
+                        <label for="baidu_item"><input class="radio" type="radio" value="baidu" name="search_select" id="baidu_item" />百度</label>
+                        <label for="google_item"><input class="radio" type="radio" value="google" name="search_select" id="google_item" />Google</label>
+                    </form>
                 </div>
             </div>
         </div>

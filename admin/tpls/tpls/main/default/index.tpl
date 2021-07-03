@@ -10,74 +10,29 @@
 <style id="temp-css" type="text/css"></style>
 <script type="text/javascript" src="<{$URL}>/public/home/js/base.js"></script>
 <script type="text/javascript" src="<{$URL}>/public/home/js/core.js"></script>
-<script type="text/javascript">if(Cookie.get('layout')){window.location.href='kp.html';}</script>
 <base target="_blank" />
 </head>
 <body>
 <em class="filter" style="display:none;"></em>
 <div id="wrap">
     <div id="top" class="clearfix">
-        <div id="weather"><script>if(top.location == self.location){document.write('<iframe width="540" height="22" frameborder="0" scrolling="no" allowtransparency="true" src="public/widget/weather/index.html"></iframe>')} </script> </div>
+        <div id="weather"><script>if(top.location == self.location){document.write('')} </script> </div>
         <ul id="set">
-            <li class="sethome"><a onclick="Yl.setHome(this,this.href); return false;" target="_self" href="<{$URL}>">把114啦设为主页</a></li>
-            <li><a href="<{$URL}>/" target="_parent" class="active">标准版</a> | <a href="<{$URL}>/kp.html" target="_parent" onclick="Cookie.set('layout',1)">宽屏版</a></li>
             <li id="skinlist"><a class="blue" title="蓝色">1</a><a class="green" title="绿色">2</a><a class="pink" title="粉色">3</a></li>
             <li class="setting"><a target="_self" href="javascript:void(0);" id="showSetting">个性设置</a></li>
         </ul>
     </div>
     <div id="header">
         <div class="box clearfix">
-            <h1 id="logo"><a href="<{$URL}>" target="_parent" title="114啦网址导航"><img src="<{$URL}>/static/images/logo.gif" height="69" width="117" /></a></h1>
+            <h1 id="logo"><a href="<{$URL}>" target="_parent" title=""><img src="<{$URL}>/static/images/logo.gif" height="69" width="117" /></a></h1>
             <div id="email_114la">
-                <form id="mail" name="mail" method="post" onsubmit="MailLogin.sendMail();return false;" action="" target="_blank">
-                    <ul>
-                        <li>
-                            <label for="mail_user_114la">帐号：</label>
-                            <input type="text" id="mail_user_114la" class="int" />
-                        </li>
-                        <li>
-                            <label for="mail_server_114la">邮箱：</label>
-                            <select id="mail_server_114la" onchange="MailLogin.change(this)">
-                                <option selected="selected">--请选择邮箱--</option>
-                                <option>@163.com 网易</option>
-                                <option>@126.com 网易</option>
-                                <option>@vip.163.com 网易</option>
-                                <option>@sina.com 新浪</option>
-                                <option>@vip.sina.com 新浪</option>
-                                <option>@yahoo.com.cn</option>
-                                <option>@yahoo.cn</option>
-                                <option>@sohu.com 搜狐</option>
-                                <option>@tom.com</option>
-                                <option>@21cn.com</option>
-                                <option>@yeah.net</option>
-                                <option>天涯帐号</option>
-                                <option>百度帐号</option>
-                                <option>人人网</option>
-                                <option>51.com</option>
-                                <option>ChinaRen</option>
-                                <option style="color:#36c;">--以下请在弹出页登录&darr;--</option>
-                                <option>开心网</option>
-                                <option>QQ空间</option>
-                                <option>@qq.com</option>
-                                <option>@139.com</option>
-                                <option>@gmail.com</option>
-                                <option>@hotmail.com</option>
-                                <option>@188.com</option>
-                            </select>
-                        </li>
-                        <li>
-                            <label for="mail_passwd_114la">密码：</label>
-                            <input type="password" id="mail_passwd_114la" class="int" />
-                            <input type="submit" value="登 录" id="mail_submit_114la" class="btn" />
-                        </li>
-                    </ul>
-                </form>
+                
             </div>
             <div id="bn">
                 <ul id="cal">
                     <li class="date"><script type="text/javascript">document.write(Calendar.day());</script> </li>
                     <li class="lcal"><script type="text/javascript">document.write(Calendar.cnday());</script> </li>
-                    <li class="m"><a href="http://tool.115.com/live/calendar/" class="hl">黄历</a><a href="http://astro.114la.com/" class="yc">运程</a><a href="public/widget/clock/index.html" class="clock">闹钟</a></li>
+                    <li class="m"><a href="https://www.laohuangli.net/" class="hl">黄历</a><a href="https://www.xzw.com/" class="yc">运程</a><a href="public/widget/clock/index.html" class="clock">闹钟</a></li>
                 </ul>
                 <div id="bn2">
                 <script type="text/javascript" src="static/js/header.js"></script>
@@ -139,86 +94,13 @@
         <div id="cate"><b class="rc-tp"><b></b></b>
             <div class="box">
                 <div id="tool">
-                    <h2 class="tool-title">实用工具<span><a href="http://tool.115.com/" rel="nr">更多&raquo;</a></span></h2>
+                    <h2 class="tool-title">实用工具</h2>
                     <ul>
                         <{*实用工具*}>
                         <{foreach from = $tools item = i}>
                             <li><a href="<{$i.url}>"<{if $i.color}> style="color:<{$i.color}>"<{/if}>><{$i.name}></a></li>
                         <{/foreach}>
                     </ul>
-                    <ul id="tool-tab" class="clearfix">
-                        <li id="tool-tab-def" rel="tb4" class="active">手机</li>
-                        <li rel="tb1">机票</li>
-                        <li rel="tb2">酒店</li>
-                        <li id="tool-tab-last" rel="tb3">旅游</li>
-                    </ul>
-                    <div id="tb">
-                        <div id="tb1" class="tbox" style="display:none;">
-                            <form class="plane" action="http://site.daodao.com/114la/go" accept-charset="utf-8" onsubmit="document.charset='utf-8';">
-                                <p class="first">&nbsp;从 &nbsp;
-                                    <input type="text" class="int_b" name="from" value="北京" />
-                                    &nbsp;到&nbsp;
-                                    <input name="to" type="text" class="int_b" value="上海" />
-                                </p>
-                                <p>日期&nbsp;
-                                    <input type="text" class="int" id="jp_today" name="date" />
-                                    &nbsp;
-                                    <input type="submit" value="查看折扣价" style="font-size:12px;" class="btn" />
-                                </p>
-                            </form>
-                        </div>
-                        <div id="tb2" class="tbox" style="display:none">
-                            <form class="plane" action="http://www.daodao.com/HACSearch" accept-charset="utf-8" onsubmit="document.charset='utf-8';">
-                                <p class="first">城市&nbsp;
-                                    <input  name="q" class="int_b" value="北京" style="width:40px">
-                                    &nbsp;价格&nbsp;
-                                    <select name="l1price" style="font-size:12px; width:75px;">
-                                        <option value="0,200">0-200元</option>
-                                        <option value="201,500">201-500元</option>
-                                        <option value="501,800">501-800元</option>
-                                        <option value="800">800元以上</option>
-                                        <option value="" selected="selected">不限</option>
-                                    </select>
-                                </p>
-                                <p>酒店&nbsp;
-                                    <input  name="nameContains" class="int_b" value="">
-                                    &nbsp;
-                                    <input type="submit" value="搜 索" class="btn" style="width:70px;" />
-                                    <input type="hidden" name="m" value="13078" />
-                                </p>
-                            </form>
-                        </div>
-                        <div id="tb3" class="tbox" style="display:none">
-                            <form class="plane" action="http://www.daodao.com/Search" onsubmit="daodao.searchTravel(); return false;">
-                                <p class="first">城　市&nbsp;
-                                    <input type="text" id="daodao_travel_q" class="int_b" name="q" value="北京" />
-                                </p>
-                                <p>关键字&nbsp;
-                                    <input class="int_b" id="daodao_travel_k" value="">
-                                    &nbsp;
-                                    <input type="submit" value="旅游搜索" style="height:22px; width:70px;" class="btn" />
-                                    <input type="hidden" name="m" value="13078" />
-                                </p>
-                            </form>
-                        </div>
-                        <div id="tb4" class="tbox" style="margin-left:-5px;">
-                            <form class="plane" action="http://www.915.com/cz/" method="post" target="_blank">
-                                <p class="first">
-                                    <select name="parvalue" style="font-size:12px; padding:1px;">
-                                    	<option value="300">300元</option>
-                                        <option selected="selected" value="100">100元</option>
-                                        <option value="50">50元</option>
-                                        <option value="30">30元</option>
-                                    </select>
-                                    <input type="text" class="int_b" name="mobile" maxlength="11" value="请输入手机号码" onclick="(this.value == '请输入手机号码')?this.value='':this.focus()" onblur="this.value==''?this.value='请输入手机号码':this.value = this.value" style="width:88px;color:#666;font-size:12px;*line-height:16px;" />
-                                    <input type="submit" value="充值" style="height:22px;  width:38px;" class="btn" />
-                                    <input type="hidden" name="ac" value="topup_submit" />
-                                    <input type="hidden" name="source" value="114la" />
-                                </p>
-                                <p style="text-align:center;"><span class="red">1</span>分钟到账&nbsp;&nbsp;最低<span class="red">9.85</span>折&nbsp;&nbsp;&nbsp;<a href="http://www.915.com" class="red">上915淘号</a></p>
-                            </form>
-                        </div>
-                    </div>
                 </div>
                 <{*网站分类*}>
                 <{foreach from = $site_class key = k item = parent}>
@@ -315,30 +197,10 @@
         </div>
     </div>
     <div id="fs">
-        <div class="box">
-            <form id="fs_form" onsubmit="miniSearch.gosearch(this);return false;" action="http://115.com/s" target="_blank" method="get">
-            <ul class="clearfix">
-            <li id="f_label">关键字：</li>
-            <li id="f_int">
-            <input name="q" type="text"/>
-            </li>
-            <li id="f_btn">
-            <input type="submit" value="搜 索" />
-            </li>
-            </ul>
-            </form>
-            <form id="taobao-form" action="http://search8.taobao.com/browse/search_auction.htm" target="_blank" style="display:none;">
-            <input type="text" name="q" id="taobao-q" />
-            </form>
-            <div id="f_radio">
-            <label for="s0"><input type="radio" name="st" class="radio" id="s0" checked="checked" />115搜索</label>
-            <label for="s5"><input type="radio" name="st" class="radio" id="s5" />购物客</label>
-            <label for="s4"><input type="radio" name="st" class="radio" id="s4" />彩票</label>
-            </div>
-        </div>
-        <b class="rc-bt"><b></b></b></div>
+        <b class="rc-bt"><b></b></b>
+    </div>
     <div id="footer">
-        <div class="link"><a href="http://www.114la.com/114la/">关于114啦建站系统V1.15</a> | <a href="/url-submit/">网站提交</a> | <a href="<{$URL}>/feedback">意见反馈</a> | <a href="http://www.114la.com/114la">源码下载</a><br />
+        <div class="link"><a href="#">关于本站</a> | <a href="/url-submit/">免费收录</a> | <a href="<{$URL}>/feedback">意见反馈</a> | <a href="https://github.com/input01/114la-plus/archive/refs/heads/main.zip">源码下载</a><br />
         </div>
         <div class="hr"></div>
         <p class="copyright">Powered by 114啦网址导航&copy;2005-<script type="text/javascript">document.write(new Date().getFullYear());</script>. All Rights Reserved. <a href="http://www.miibeian.gov.cn/"><{$icp}></a></p>

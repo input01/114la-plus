@@ -104,7 +104,7 @@ class mod_links
         $data['site_name'] = Char_cv($data['site_name']);
         if (!preg_match("#^http://#", $data['site_url']))
         {
-            throw new Exception("网站地址不能为空或请以http://开头");
+            // throw new Exception("网站地址不能为空或请以http://开头");
         }
         $data['sort'] = trim($data['sort']);
         !is_numeric($data['sort']) && $data['sort'] = 100;
@@ -144,7 +144,7 @@ class mod_links
         $data['site_name'] = Char_cv($data['site_name']);
         if (!preg_match("#^http://#", $data['site_url']))
         {
-            throw new Exception("网站地址不能为空或请以http://开头");
+           // throw new Exception("网站地址不能为空或请以http://开头");
         }
         $data['sort'] = trim($data['sort']);
         !is_numeric($data['sort']) && $data['sort'] = 100;

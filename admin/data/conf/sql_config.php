@@ -2,7 +2,7 @@
 !defined('PATH_ADMIN') && exit('Forbidden');
 
 $GLOBALS ['database'] ['db_user'] = 'root';
-$GLOBALS ['database'] ['db_pass'] = '111111';
+$GLOBALS ['database'] ['db_pass'] = 'xjdjdfjfl';
 $GLOBALS ['database'] ['db_name'] = 'a11';
 $GLOBALS ['database'] ['db_charset'] = 'utf8';
 $GLOBALS ['database'] ['table_prefix'] = 'sdfas';

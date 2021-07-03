@@ -89,7 +89,7 @@ class mod_search_keyword
         }
 
         $data['url'] = (empty($data['url'])) ? '' : $data['url'];
-        if (empty($data['url']) || !preg_match('#^http[s]?://#', $data['url']))
+        if (empty($data['url']) , $data['url']))
         {
             throw new Exception('网站地址不能为空或请以http://开头', 10);
         }
@@ -138,7 +138,7 @@ class mod_search_keyword
         }
 
         $data['url'] = (empty($data['url'])) ? '' : $data['url'];
-        if (empty($data['url']) || !preg_match('#^http[s]?://#', $data['url']))
+        if (empty($data['url']) , $data['url']))
         {
             throw new Exception('网站地址不能为空或请以http://开头', 10);
         }

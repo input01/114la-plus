@@ -18,21 +18,6 @@
             <div id="header">
                 <div class="con clearfix">
                     <h1 id="logo"><a href="<{$URL}>"><img src="<{$URL}>/static/images/logo.gif" alt="" /></a></h1>
-                    <div class="searchform">
-                        <form id="searchForm" action="http://www.baidu.com/s" method="get" target="_blank">
-                            <a class="label" href="http://www.baidu.com/index.php?tn=ylmf_4_pg&ch=7">
-                                <img width="105" height="35" alt="百度" src="http://www.114la.com/static/images/s/baidu.gif" />
-                            </a>
-                            <input type="text" name="wd" class="text" autocomplete="off" />
-                            <input type="submit" class="submit" value="百度一下" />
-                            <input type="hidden" name="tn" value="ylmf_4_pg" />
-                            <input type="hidden" name="ch" value="7" />
-                        </form>
-                        <div class="ctrl">
-                            <label for="baidu_item"><input class="radio" type="radio" value="baidu" name="search_select" checked="checked" id="baidu_item" />百度</label>
-                            <label for="google_item"><input class="radio" type="radio" value="google" name="search_select" id="google_item" />Google</label>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="guide clearfix">

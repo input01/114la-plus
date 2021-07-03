@@ -75,7 +75,7 @@ class mod_famous_nav
 		}
 		if(!eregi("^http://",$data['url']))
 		{
-			throw new Exception("网站地址不能为空或请以http://开头");
+			// throw new Exception("网站地址不能为空或请以http://开头");
 		}
 		$data['displayorder']=trim($data['displayorder']);
 		!is_numeric($data['displayorder']) && $data['displayorder']=100;
@@ -161,7 +161,7 @@ class mod_famous_nav
 			}
 			if(!eregi("^http://",$data['url']))
 			{
-				throw new Exception("网站地址不能为空或请以http://开头");
+				// throw new Exception("网站地址不能为空或请以http://开头");
 			}
 			$data['displayorder']=trim($data['displayorder']);
 			!is_numeric($data['displayorder']) && $data['displayorder']=100;

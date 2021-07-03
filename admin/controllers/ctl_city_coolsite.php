@@ -80,7 +80,7 @@ class ctl_city_coolsite
             $data['name'] = $site_name;
 
             $site_url = (empty($_POST['site_url'])) ? '' : $_POST['site_url'];
-            if (empty($site_url) || !preg_match('#^http[s]?://#', $site_url))
+            if (empty($site_url), $site_url))
             {
                 throw new Exception('网站地址不能为空或请以http://开头', 10);
             }
