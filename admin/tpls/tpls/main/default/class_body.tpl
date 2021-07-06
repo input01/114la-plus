@@ -6,6 +6,7 @@ v id="guide" class="bd">
     <{if $current_class_name}><dd><em>&gt;</em><{$current_class_name}></dd><{/if}>
     </dl>
     <ul>
+    <li class="sethome"><a href="javascript:void(0)" onclick="Yl.setHome(this,'<{$URL}>')" target="_parent" class="gray6">设本站为主页</a></li>
     <li class="feedback"><a href="<{$URL}>/feedback/" class="gray6">网友留言</a></li>
     </ul>
     

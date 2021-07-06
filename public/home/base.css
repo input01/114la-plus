@@ -205,7 +205,7 @@ a { text-decoration:none; color:#000; cursor:pointer;}
 		#ls dt,#ls dd { float:left;}
 		#ls dt,#ls dd.m { width:60px;}
 		#ls dt a { color:#970200;}
-		#ls dd.l { width:633px;}
+		#ls dd.l { width:633px; overflow:hidden}
 		dd.l a { margin: 0 9px;}
 		#ls17 dd.l a{ margin:0 8px;}
 		#ls3 dd.l a,#ls5 dd.l a { margin:0 10px;}
