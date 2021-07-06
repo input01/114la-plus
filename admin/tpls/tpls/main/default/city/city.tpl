@@ -4,8 +4,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title><{$title}> - <{$current_city}>导航</title>
         <meta name="description" content="114啦<{$current_city}>导航，提供<{$current_city}>生活导航信息" />
-        <link rel="stylesheet" type="text/css" href="<{$URL}>/static/css/style.css" />
-        <link rel="stylesheet" type="text/css" href="<{$URL}>/static/css/city.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/city.css" media="all" />
         <base target="_blank" />
         <style type="text/css">
             body,td,th {
@@ -17,16 +17,16 @@
         <div id="page" class="container">
             <div id="header">
                 <div class="con clearfix">
-                    <h1 id="logo"><a href="<{$URL}>"><img src="<{$URL}>/static/images/logo.gif" alt="" /></a></h1>
+                    <h1 id="logo"><a href="/"><img src="/static/images/logo.gif" alt="" /></a></h1>
                 </div>
             </div>
             <div class="guide clearfix">
                 <span class="location">
                     <strong>您当前的位置：</strong>
-                    <a href="<{$URL}>" target="_parent">导航首页</a> &raquo; <{$current_city}>城市导航
+                    <a href="/" target="_parent">导航首页</a> &raquo; <{$current_city}>城市导航
                 </span>
                 <span class="meta">
-                    <a href="<{$URL}>/feedback/" class="feedback">留言反馈</a>
+                    <a href="/feedback/" class="feedback">留言反馈</a>
                 </span>
             </div>
             <!-- / giude-->
@@ -36,7 +36,7 @@
                 <div id="side"> <b class="rc-tp1"><b></b></b>
                     <div class="con">
                         <div id="tool">
-                            <h2 class="tool-title">实用工具<span><a href="http://tool.115.com/" rel="nr">更多&raquo;</a></span></h2>
+                            <h2 class="tool-title">实用工具<span><a href="#" rel="nr">更多&raquo;</a></span></h2>
                             <ul>
                                  <{*实用工具*}>
                                  <{foreach from = $tools item = i}>
@@ -48,7 +48,6 @@
 
                         <{*网站分类*}>
                         <{foreach from = $site_class key = k item = parent}>
-                        <{if $k!=='文化教育' && $k!=='其它分类'}>
                         <h2><{$k}></h2>
                         <ul<{if $parent.0.classname_len > 6}> class="c2"<{/if}>>
                             <{foreach from = $parent item = i}>
@@ -132,10 +131,9 @@
                 <b class="rc-bt"><b></b></b> </div>
             <!-- / citys-->
 
-            <div id="footer" class="clearfix"> <a href="<{$URL}>" target="_parent" class="goback">返回首页</a> </div>
+            <div id="footer" class="clearfix"> <a href="/" target="_parent" class="goback">返回首页</a> </div>
             <div id="gotop"><a href="#page" target="_self">返回顶部</a></div>
         </div>
-		<script type="text/javascript" src="<{$URL}>/static/js/backtop.js"></script>
+        <script type="text/javascript" src="/static/js/backtop.js"></script>
     </body>
-	<script type="text/javascript" src="<{$URL}>/static/js/opensug_resoucre.js"></script>
 </html>

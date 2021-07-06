@@ -6,27 +6,27 @@
 <meta name="keywords" content="<{$class_meta_keyword}>" />
 <meta name="description" content="<{$class_meta_description}>" />
 <title><{$title}></title>
-<link rel="stylesheet" type="text/css" href="<{$URL}>/public/page/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/public/page/style.css" media="all" />
 <link id="skin" rel="stylesheet" type="text/css" href="" />
-<script type="text/javascript" src="<{$URL}>/public/page/js/skin.js"></script>
+<script type="text/javascript" src="/public/page/js/skin.js"></script>
 <base target="_blank" />
 </head>
 <body>
 <div id="page" class="container">
     <div id="header" class="box">
         <div class="con clearfix">
-            <h1 id="logo"><a href="<{$URL}>"><img src="<{$URL}>/static/images/logo.gif" alt="" /></a></h1>
+            <h1 id="logo"><a href="/"><img src="/static/images/logo.gif" height="69" width="117"></a></h1>
             <div class="searchform">
                 <div class="ctrl">
                 </div>
             </div>
         </div>
     </div>
-    <div class="guide clearfix"><span class="location"><strong>您当前的位置：</strong><a href="<{$URL}>" target="_parent">导航首页</a> &raquo; 
+    <div class="guide clearfix"><span class="location"><strong>您当前的位置：</strong><a href="/" target="_parent">导航首页</a> &raquo; 
     <{if $parent_class_name}><span><{$parent_class_name}></span><{/if}>
     <{if $current_class_name}><span><{$current_class_name}></span><{/if}>
     </span>
-    <span class="meta"><a href="<{$URL}>/feedback/" class="feedback">留言反馈</a><a href="javascript://"  onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('<{$URL}>')" class="sethome" target="_parent">把114啦设为主页</a></span></div>
+    <span class="meta"><a href="/feedback/" class="feedback">留言反馈</a><a href="javascript://"  onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('/')" class="sethome" target="_parent">设为主页</a></span></div>
 
 <{foreach from = $site_list key = k item = parent}>
       <div class="box"><b class="rc-tp"><b></b></b>
@@ -50,12 +50,11 @@
       
 <{/foreach}>
         
-    <div id="footer" class="clearfix"> <a href="<{$URL}>" target="_parent">返回首页</a> </div>
+    <div id="footer" class="clearfix"> <a href="/" target="_parent">返回首页</a> </div>
     <div id="gotop"><a href="#page" target="_self">返回顶部</a></div>
 </div>
-<script type="text/javascript" src="<{$URL}>/public/js/ylmf.js"></script>
-<script type="text/javascript" src="<{$URL}>/public/page/js/common.js"></script>
+<script type="text/javascript" src="/public/js/ylmf.js"></script>
+<script type="text/javascript" src="/public/page/js/common.js"></script>
 <div style="display:none"><{$tongji}></div>
 </body>
-<script type="text/javascript" src="<{$URL}>/static/js/opensug_resoucre.js"></script>
 </html>

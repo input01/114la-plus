@@ -5,7 +5,7 @@ ul,ul li,dl ,dt,dd { list-style:none;}
 em {font-style:normal;}
 
 body { font-size:14px; line-height:1.5; color:#000; background:#3B85C3;}
-input,select,body { font-family:Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
+// input,select,body { font-family:Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
 h2 { font-size:14px;}
 .fl { float:left}
 .fr { float:right}

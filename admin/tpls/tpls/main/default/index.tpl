@@ -6,10 +6,10 @@
 <meta name="keywords" content="<{$index_meta_keyword}>" />
 <meta name="description" content="<{$index_meta_description}>" />
 <title><{$title}></title>
-<link href="<{$URL}>/public/home/base.css" rel="stylesheet" type="text/css" />
+<link href="/public/home/base.css" rel="stylesheet" type="text/css" />
 <style id="temp-css" type="text/css"></style>
-<script type="text/javascript" src="<{$URL}>/public/home/js/base.js"></script>
-<script type="text/javascript" src="<{$URL}>/public/home/js/core.js"></script>
+<script type="text/javascript" src="/public/home/js/base.js"></script>
+<script type="text/javascript" src="/public/home/js/core.js"></script>
 <base target="_blank" />
 </head>
 <body>
@@ -24,10 +24,7 @@
     </div>
     <div id="header">
         <div class="box clearfix">
-            <h1 id="logo"><a href="<{$URL}>" target="_parent" title=""><img src="<{$URL}>/static/images/logo.gif" height="69" width="117" /></a></h1>
-            <div id="email_114la">
-                
-            </div>
+            <h1 id="logo"><a href="/" target="_parent" title=""><img src="/static/images/logo.gif" height="69" width="117" /></a></h1>
             <div id="bn">
                 <ul id="cal">
                     <li class="date"><script type="text/javascript">document.write(Calendar.day());</script> </li>
@@ -68,8 +65,8 @@
                     </p><!--/ keywords-->
                 </div>
                 <div class="sf">
-                    <form action="http://115.com/s" method="get" target="_blank">
-                        <a href="http://115.com" id="sf_label" rel="lk"><img src="static/images/s/115.gif" width="105" height="35" rel="img" /></a><input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" value="115聚搜" rel="btn" />
+                    <form action="#" method="get" target="_blank">
+                        <a href="#" id="sf_label" rel="lk"><img src="" width="105" height="35" rel="img" /></a><input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" value="默认搜索" rel="btn" />
                         <div class="ctrl">
                         <{foreach from=$search item=row1}>
                             <{if $row1.class == $search_class2.classid}>
@@ -127,8 +124,8 @@
                     <div id="fm">
                         <ul id="topsite" class="clearfix">
                             <{*TOP 名站*}>
-                            	<{foreach from = $mz_top item = i}>
-                            	<{$i.html}>
+                                <{foreach from = $mz_top item = i}>
+                                <{$i.html}>
                             <{/foreach}>
                         </ul>
                         <ul id="fmsite" class="clearfix">
@@ -147,7 +144,7 @@
             </div>
             <div id="ls"><b class="rc-tp"><b></b></b>
                 <div class="box">
-					<{*城市导航*}>
+                    <{*城市导航*}>
                     <dl id="local" class="alt" style="visibility:hidden;">
                         <dt id="loc_t"></dt>
                         <dd class="l" id="loc_c"></dd>
@@ -200,64 +197,64 @@
         <b class="rc-bt"><b></b></b>
     </div>
     <div id="footer">
-        <div class="link"><a href="#">关于本站</a> | <a href="/url-submit/">免费收录</a> | <a href="<{$URL}>/feedback">意见反馈</a> | <a href="https://github.com/input01/114la-plus/archive/refs/heads/main.zip">源码下载</a><br />
+        <div class="link"><a href="#">关于本站</a> | <a href="/url-submit/">免费收录</a> | <a href="/feedback">意见反馈</a> | <a href="https://github.com/input01/114la-plus/archive/refs/heads/main.zip">源码下载</a><br />
         </div>
         <div class="hr"></div>
         <p class="copyright">Powered by 114啦网址导航&copy;2005-<script type="text/javascript">document.write(new Date().getFullYear());</script>. All Rights Reserved. <a href="http://www.miibeian.gov.cn/"><{$icp}></a></p>
 
     </div>
-<script type="text/javascript" src="<{$URL}>/public/home/js/config.js"></script>
-<script type="text/javascript" src="<{$URL}>/public/home/js/main.js"></script>
+<script type="text/javascript" src="/public/home/js/config.js"></script>
+<script type="text/javascript" src="/public/home/js/main.js"></script>
 <script type="text/javascript">
     try{
-		if(window.SR){
-			SR.SearchData = {
+        if(window.SR){
+            SR.SearchData = {
                 <{foreach from=$search item=row2}>
                     engine_<{$row2.id}>: {
-						action: "<{$row2.action}>",
-						name: "<{$row2.name}>",
-						btn: "<{$row2.btn}>",
-						img: ["<{$row2.img_text}>","<{$row2.img_url}>"],
-						url: "<{$row2.url}>",
-						params: {
-							<{$row2.params}>
-						}
+                        action: "<{$row2.action}>",
+                        name: "<{$row2.name}>",
+                        btn: "<{$row2.btn}>",
+                        img: ["<{$row2.img_text}>","<{$row2.img_url}>"],
+                        url: "<{$row2.url}>",
+                        params: {
+                            <{$row2.params}>
+                        }
                     },
                 <{/foreach}>
-				none:{}
-            }	
-		}
-		
-		var sbBox = document.getElementById('sb');
-		var sbForms = sbBox.getElementsByTagName('form');
-		for(var i = 0,len = sbForms.length; i < len; i++){
-			sbForms[i].reset();
-		}
-		
-		var sbRadios = sbBox.getElementsByTagName('input');
-		var inputTxtArr = [];
-		if(sbRadios.length){
-			var setRadios = [];
-			for(var i = 0,len = sbRadios.length; i < len; i++){
-				var input = sbRadios[i];
-				if(input.getAttribute("rad") && input.checked){
-					setRadios.push(input);
-				}
-				else if(input.getAttribute("rel") == "kw"){
-					var key = inputTxtArr.push(input);
-					input.setAttribute("index",key - 1);
-					
-				}
-			}
-			try{
-			for(var i = 0,len = setRadios.length; i < len; i++){
-				var input = setRadios[i];
-				
-				SR.RadioMod.ClickRadio(input);
-			}
-			}catch(e){}
-		}
-	}catch(e){}
+                none:{}
+            }   
+        }
+        
+        var sbBox = document.getElementById('sb');
+        var sbForms = sbBox.getElementsByTagName('form');
+        for(var i = 0,len = sbForms.length; i < len; i++){
+            sbForms[i].reset();
+        }
+        
+        var sbRadios = sbBox.getElementsByTagName('input');
+        var inputTxtArr = [];
+        if(sbRadios.length){
+            var setRadios = [];
+            for(var i = 0,len = sbRadios.length; i < len; i++){
+                var input = sbRadios[i];
+                if(input.getAttribute("rad") && input.checked){
+                    setRadios.push(input);
+                }
+                else if(input.getAttribute("rel") == "kw"){
+                    var key = inputTxtArr.push(input);
+                    input.setAttribute("index",key - 1);
+                    
+                }
+            }
+            try{
+            for(var i = 0,len = setRadios.length; i < len; i++){
+                var input = setRadios[i];
+                
+                SR.RadioMod.ClickRadio(input);
+            }
+            }catch(e){}
+        }
+    }catch(e){}
     </script>
 <div class="tongji"><{$tongji}></div>
 

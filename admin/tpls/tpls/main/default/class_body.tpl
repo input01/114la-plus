@@ -1,4 +1,4 @@
-    <div id="guide" class="bd">
+  <div id="guide" class="bd">
     <dl>
     <dt>您当前的位置：</dt>
     <dd><a href="<{$URL}>" target="_parent">首页</a></dd>
