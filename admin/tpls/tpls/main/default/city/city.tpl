@@ -27,7 +27,6 @@
                 </span>
                 <span class="meta">
                     <a href="<{$URL}>/feedback/" class="feedback">留言反馈</a>
-                    <a href="javascript://"  onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('<{$URL}>')" class="sethome" target="_parent">把114啦设为主页</a>
                 </span>
             </div>
             <!-- / giude-->

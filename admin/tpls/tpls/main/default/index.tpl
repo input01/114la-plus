@@ -16,7 +16,7 @@
 <em class="filter" style="display:none;"></em>
 <div id="wrap">
     <div id="top" class="clearfix">
-        <div id="weather"><script>if(top.location == self.location){document.write('')} </script> </div>
+        <div id="weather" style="margin-top: -8px;"><script>if(top.location == self.location){document.write('<iframe width="400px" height="30px" frameborder="0" scrolling="no" hspace="0" src="https://myip.ipip.net"></iframe>')} </script> </div>
         <ul id="set">
             <li id="skinlist"><a class="blue" title="蓝色">1</a><a class="green" title="绿色">2</a><a class="pink" title="粉色">3</a></li>
             <li class="setting"><a target="_self" href="javascript:void(0);" id="showSetting">个性设置</a></li>

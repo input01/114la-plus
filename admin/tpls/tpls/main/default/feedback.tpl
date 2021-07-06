@@ -14,13 +14,6 @@
 
     	<h1 class="logo"><a href="./" ><{$sysname}>-意见反馈</a></h1>
     	<div id="menu">
-        	<ul>
-			    <li><a href="http://www.114la.com" class="home" >114啦网址导航</a></li>
-            	<li><a href="http://www.ylmf.com" class="ylmf" target=_blank>雨林木风</a></li>
-                <li><a href="http://www.ylmf.net" class="bbs" target=_blank>交流论坛</a></li>
-                <li><a href="http://www.xiazaiba.com" class="xiazaiba" target=_blank>绿色下载吧</a></li>
-                <li><a href="http://115.com" class="search" >115聚合搜索</a></li>
-            </ul>
         </div>
         </div>
     </div>

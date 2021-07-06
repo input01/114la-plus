@@ -251,15 +251,11 @@ overflow:hidden;
 <div id="wrap">
 <div id="header">
   <div id="elogin">
-    <div class="r"><a href="#" onclick="javascript:this.style.behavior='url(#default#homepage)';this.setHomePage('<{$URL}>');">设为首页</a> | <a href="javascript:addBookmark('<{$sysname}>','<{$URL}>');">加入收藏</a></div>
-      <a href="<{$URL}>" target="_blank"><<返回首页</a>　 <a href="http://fav.115.com" >网络收藏夹</a>
+    <div class="r"><a href="#" onclick="alert(‘开发中’)">设为首页</a> | <a href="#">加入收藏</a></div>
+      <a href="<{$URL}>" target="_blank"><<返回首页</a>
     <label></label>
   </div>
   <div id="banner">
-    <div id="money">
-    <div class="mcon"><a href="http://u.115.com/?13"><img alt="115网络U盘" src="http://www.114la.com/image/115-u_1.gif"　target="_blank" /></a></div>
-
-    </div>
     <div id="logo"><a href="<{$URL}>/" target="_top"><img src="<{$URL}>/static/images/logo.gif" alt="LOGO"/></a></div>
   </div>
 </div>
@@ -271,11 +267,9 @@ overflow:hidden;
       4. 不收录以同类型网站通用名称文字作为申请的名称，例如&ldquo;在线音乐&rdquo;，请以适当的网站名做为申请名称，如xiazaiba.com的网站中文名是&ldquo;<a href=http://www.xiazaiba.com/" target="_blank">绿色下载吧</a>&rdquo;； <br />
       5. 不收入非顶级域名、挂靠其他站点、无实际内容，只提供域名指向的网站或仅有单页内容的网站； <br />
       6. 不收录在正常情况下无法访问的网站 <br />
-      7. 公益性网站，或内容确实有独特之处的网站将优先收录 </p>
 	<p><em>特别强调:
         <br />     
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 本站仅收录PR值大于等于 2，Alexa 排名 100W 以内，BAIDU、GOOGLE 均有收录，健康有内容并每日更新，且具有真实的信息产业部 ICP/IP 备案信息的各类网站。<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果不能满足上述要求的站点，若具有公益性质，或内容确实有独特之处的网站，可以填写较充分理由申请，我们将酌情收录。
  <br />
 &nbsp;&nbsp;&nbsp;&nbsp; 一些购物类网站等盈利性站点，请直接联系本站客服进行广告服务咨询。我们将为您提供最佳广告位！
 </em></p>
@@ -389,15 +383,6 @@ overflow:hidden;
     <td><input name="input" type="text" onclick="copyToClipBoard(this.value)" value="<{$URL}>" class="urltxt" /></td>
   </tr>
   <tr>
-    <th>图片链接：</th>
-    <td><img src="<{$URL}>/static/images/8831-logo.gif" alt="<{$sysname}>" width="88" height="31" /></td>
-  </tr>
-
-  <tr>
-    <th>首页地址：</th>
-    <td><input name="input1" type="text" class="urltxt" id="input1" onclick="copyToClipBoard(this.value)" value="<{$URL}>" /></td>
-  </tr>
-  <tr>
     <th>Logo地址：</th>
     <td><input name="input2" type="text" class="urltxt" id="input2" onclick="copyToClipBoard(this.value)" value="<{$URL}>/logo.gif" /></td>
   </tr>
@@ -408,7 +393,7 @@ overflow:hidden;
   </tr>
 </table>
   </div>
-<div id="footer"> <a href="http://www.114la.com/114la/index.html" target="_blank">关于114啦建站系统V1.13</a> | <a href="<{$URL}>/url-submit/" target="_blank">网站提交</a> | <a href="<{$URL}>/feedback" target="_blank">意见反馈</a> | <a href="http://www.114la.com/gongyihuodong/index.htm" target="_blank">公益活动</a> 
+<div id="footer"> <a href="#" target="_blank">关于本站</a> | <a href="<{$URL}>/url-submit/" target="_blank">免费收录</a> | <a href="<{$URL}>/feedback" target="_blank">意见反馈</a>
             <div class="hr"></div>
            Powered by <a href="http://www.114la.com/">114啦网址导航</a>&copy;2005-<script type="text/javascript">document.write(new Date().getFullYear());</script> . All Rights Reserved.
         </div>
