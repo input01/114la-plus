@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title><{$title}> - <{$current_city}>导航</title>
-        <meta name="description" content="114啦<{$current_city}>导航，提供<{$current_city}>生活导航信息" />
+        <meta name="description" content="<{$current_city}>导航，提供<{$current_city}>生活导航信息" />
         <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
         <link rel="stylesheet" type="text/css" href="/static/css/city.css" media="all" />
         <base target="_blank" />
@@ -54,9 +54,8 @@
                             <li ><a href="<{$i.urlpath}>"><{$i.classname}></a></li>
                             <{/foreach}>
                         </ul>
-                        <{/if}>
                         
-                <{/foreach}>
+                        <{/foreach}>
 
                     </div>
                     <!-- / con-->
