@@ -13,7 +13,6 @@
 <base target="_blank" />
 </head>
 <body>
-<em class="filter" style="display:none;"></em>
 <div id="wrap">
     <div id="top" class="clearfix">
         <div id="weather" style="margin-top: -8px;"><script>if(top.location == self.location){document.write('<iframe width="400px" height="30px" frameborder="0" scrolling="no" hspace="0" src="https://myip.ipip.net"></iframe>')} </script> </div>

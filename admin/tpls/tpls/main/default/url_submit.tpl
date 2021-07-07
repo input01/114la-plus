@@ -256,7 +256,7 @@ overflow:hidden;
     <label></label>
   </div>
   <div id="banner">
-    <div id="logo"><a href="/" target="_top"><img src="/static/images/logo.gif" alt="LOGO"/></a></div>
+    <div id="logo"><a href="/" target="_top"><img src="/static/images/logo.gif" alt="LOGO"  height="69" width="117"/></a></div>
   </div>
 </div>
 <div class="con">
@@ -375,7 +375,7 @@ overflow:hidden;
   <table>
   <tr>
     <th>网站说明：</th>
-    <td>114啦网址导航</td>
+    <td><{$sysname}></td>
   </tr>
 
   <tr>

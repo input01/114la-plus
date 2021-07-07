@@ -11,8 +11,7 @@
 <div class="wrap">
     <div id="header">
         <div class="container">
-
-        <h1 class="logo"><a href="./" ><{$sysname}>-意见反馈</a></h1>
+        <div id="logo"><a href="/" target="_top"><img src="/static/images/logo.gif" alt="LOGO"  height="69" width="117"/></a></div>
         <div id="menu">
         </div>
         </div>
