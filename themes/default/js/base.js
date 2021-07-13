@@ -353,8 +353,8 @@ SearchEngine =function(searchForm){
 		int:$("#"+searchForm.input).el
 		
 	},
-	HiddenParams = [Box.form.tn];
-	
+	// HiddenParams = [Box.form.tn];
+	HiddenParams = [];
 	function setForm(searchItem){
 		var _ = searchItem.img[0].replace(/\/.*?\.gif$/,"");
 		var imgPath = Box.img.src.split(_)[0];

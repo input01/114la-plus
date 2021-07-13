@@ -1,6 +1,6 @@
     <div id="meta" class="clearfix bd">
         <p>
-        <a href="<{$URL}>" class="back" target="_parent"><span>返回</span><em class="fl">返回</em></a>
+        <a href="/" class="back" target="_parent"><span>返回</span><em class="fl">返回</em></a>
         <a class="close" href="javascript:closeWin()" target="_self"><span>关闭</span><em class="fl">关闭</em></a>
         </p>
     </div>
@@ -19,7 +19,7 @@
 	   window.top.close();
 	 }
 </script>
-<script type="text/javascript" src="<{$URL}>/themes/default/js/page.js"></script>
+<script type="text/javascript" src="/themes/default/js/page.js"></script>
 <div style="display:none"><{$tongji}></div>
 </body>
 </html>

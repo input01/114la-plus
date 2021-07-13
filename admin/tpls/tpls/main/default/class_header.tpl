@@ -5,18 +5,18 @@
 <meta name="keywords" content="<{$class_meta_keyword}>" />
 <meta name="description" content="<{$class_meta_description}>" />
 <title><{$title}></title>
-<link href="<{$URL}>/themes/default/page.css" rel="stylesheet" type="text/css" />
-<link id="skin" href="<{$URL}>/themes/default/skins/blue/page.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="<{$URL}>/themes/default/js/ylmf.cai.js"></script>
-<script type="text/javascript" src="<{$URL}>/themes/default/js/config.js"></script>
-<script type="text/javascript" src="<{$URL}>/themes/default/js/base.js"></script>
+<link href="/themes/default/page.css" rel="stylesheet" type="text/css" />
+<link id="skin" href="/themes/default/skins/blue/page.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/themes/default/js/ylmf.cai.js"></script>
+<script type="text/javascript" src="/themes/default/js/config.js"></script>
+<script type="text/javascript" src="/themes/default/js/base.js"></script>
 <script type="text/javascript">
 var PageSkin = (function(){
 	var PageskinCookie = userCookie.init();
 	if(PageskinCookie.is("style")){
 		var skins = ["blue","orange","green","purple","blue2"];
 		var skinName = skins[Number(PageskinCookie.get("style"))];
-		document.getElementById("skin").href = "<{$URL}>/themes/default/skins/"+skinName+"/page.css";
+		document.getElementById("skin").href = "/themes/default/skins/"+skinName+"/page.css";
 	}
 	return{
 		cookie:PageskinCookie
@@ -31,7 +31,7 @@ var PageSkin = (function(){
 	(function(){
 		if(PageSkin.cookie.is("bg")){
 			var value = PageSkin.cookie.get("bg");
-			var img = "<{$URL}>/themes/default/images/bg/"+Yl.trim(value);
+			var img = "/themes/default/images/bg/"+Yl.trim(value);
 			if(Yl.trim(value)!=="default"){
 				$("#page").setStyle("background","url("+img+")");
 			}else{
@@ -44,6 +44,6 @@ var PageSkin = (function(){
 </script>
     <div class="wrap">
         <div id="header" class="clearfix">
-            <h1 id="logo"><a href="<{$URL}>" target="_parent"><img src="<{$URL}>/static/images/logo.gif" height="69" width="117" /></a></h1>
+            <h1 id="logo"><a href="/" target="_parent"><img src="/static/images/logo.gif" height="69" width="117" /></a></h1>
 
         </div><!--/ header-->

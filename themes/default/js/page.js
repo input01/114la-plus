@@ -29,7 +29,7 @@ var SE = new SearchEngine({
 	input:"searchInput",
 	smb:"searchBtn"
 });//实例搜索模块类
-SE.input.focus(); //激活搜索框
+// SE.input.focus(); //激活搜索框
  //搜索TAB菜单开始
 $("#search-menu ul li a").each(function(el){
 	var t = el.parentNode.tagName.toUpperCase();									
