@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <b class="rc-bt"><b></b></b></div>
+    </div>
         
     <div id="search">
         <div id="ex">
