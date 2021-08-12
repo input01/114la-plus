@@ -4,7 +4,7 @@ img,button { border:0;}
 ul,ul li,dl ,dt,dd { list-style:none;}
 em {font-style:normal;}
 
-body { font-size:14px; line-height:1.5; color:#000; background:#3B85C3;}
+body {font-size:14px;line-height:1.5;color:#000;background:#3B85C3;}
 // input,select,body { font-family:Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
 h2 { font-size:14px;}
 .fl { float:left}
@@ -24,7 +24,7 @@ a { text-decoration:none; color:#000; cursor:pointer;}
 
 #wrap { width:980px; margin: 0 auto; background:#fff; padding:0 10px;}
 #bm ul,#bm li,.sf,.sw,.rc-tp, .rc-tp b, .rc-bt, .rc-bt b, #ex a,#set li,#sm li ,#q_int,#qs b,.sf .l,.sf .r,.tg-ms,#cal .clock,#qs-btn,#skinlist a,#topsite em,.setting a,#settingBox .h2,#cate ul#tool-tab,#tool-tab li,.tsbox .arrow,#q_int .button-wrap{ background:url(images/images.gif?20101101) no-repeat;}
-#sb,#header .box,#top,#q_int{ background:url(images/repeat.gif) repeat-x;}
+#sb,#header .box,#top,#q_int{background:url(images/repeat.gif) repeat-x;}
 
 .rc-tp,.rc-bt { position:relative; z-index:1; display:block; height:4px; overflow:hidden;  }
 .rc-tp b,.rc-bt b { float:right; width:4px; height:4px; }
@@ -36,10 +36,10 @@ a { text-decoration:none; color:#000; cursor:pointer;}
 .rc-bt b {background-position:-142px -100px;}
 .rc-bt { background-position:-146px -100px;}
 
-.box,#tool-tab,#bm ul,#top,#settingBox{ border:1px solid #ace;}
+.box,#tool-tab,#bm ul,#top,#settingBox{border:1px solid #ace;}
 #cate li,#ls dl,#fm li,#qs-result li {line-height:30px; height:30px;}
 
-#top {line-height:22px; height:24px; background-position:0 -50px; border-bottom:none; padding:0 0 0 5px; font-size:12px; color:#666;}
+#top {line-height:22px;height:24px;background-position:0 -50px;border-bottom:none;padding:0 0 0 5px;font-size:12px;color:#666;}
 	#top a { color:#666;}
 	#weather {  float:left;}
 	#set { float:right;}
@@ -58,9 +58,9 @@ a { text-decoration:none; color:#000; cursor:pointer;}
 		#settingBox .h2{ background-position:0 -566px; height:24px; text-indent:-9999px; position:absolute; top:-24px; right:-2px; width:84px; cursor:pointer;}
 	
 #header {margin-bottom:5px;}
-	#header .box { height:74px; background-position:0 -80px; }
+	#header .box {/* height:74px; */background-position:0 -80px;}
 	#logo,#email_114la {float:left; display:inline;}
-	#logo{ margin: 2px 0 0 5px;}
+	#logo{margin: 10px 0 0 10px;}
 	#email_114la {  margin-left:8px; margin-top:2px;width:200px;}
 		#email_114la li { height:23px;clear:both;}
 		#email_114la label { width:36px; line-height:23px; float:left;font-size:12px;}
@@ -69,9 +69,9 @@ a { text-decoration:none; color:#000; cursor:pointer;}
 		#mail_server_114la { width:154px; height:20px; font-size:12px; margin-top:2px;}
 		#mail_passwd_114la { width:94px; margin-right:2px;}
 		#email_114la .btn { width:50px; text-align:center; height:22px; font-size:12px;}
-	#bn { float:right; height:60px; overflow:hidden; width:641px; margin:7px 3px 0 0;}
+	#bn {float:right;height: 100px;overflow:hidden;width:641px;/* margin:7px 3px 0 0; */}
 		#google { width:380px; font-size:12px; margin-right:5px; height:60px; overflow:hidden; float:left;}
-		#cal { height:60px; float:right; width:150px; font-size:12px; text-align:center; line-height:20px;}
+		#cal {margin-top: 12px;height:60px;float:right;width:150px;font-size:12px;text-align:center;line-height:20px;}
 			#cal .date a{ font-weight:bold; color:#015BAB;}
 			#cal .m a { float:left; text-align: center; width:40px;}
 			#cal a:hover,#ex a:hover { color:#f00; text-decoration:underline;}
