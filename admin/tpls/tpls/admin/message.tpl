@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>网址跳转中……</title>
 <link href="static/css/style.css" rel="stylesheet" type="text/css" />
-<link href="static/css/style-zdb.css" rel="stylesheet" type="text/css" />
+<!-- <link href="static/css/style-zdb.css" rel="stylesheet" type="text/css" /> -->
 </head>
 <body>
 
