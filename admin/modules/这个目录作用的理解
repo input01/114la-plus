@@ -1,3 +1,4 @@
-这里的模块可以理解为控制器controllor调用的模型model（实际上已经是service的概念，太臃肿了）-然后model调用视图smarty展示给用户内容
+这里的模块可以理解为控制器controllor调用的模型model（实际上已经是service的概念，太臃肿了），然后model竟然直接调用视图smarty display展示给用户内容了。
 从架构上来讲，不太好，但其实也没啥。
 按照我对MVC的理解，应该是model返回给controllor数据对象，然后让controllor去决定用哪个视图。
+可以参考这里对MVC的介绍：https://www.php.cn/faq/418269.html
