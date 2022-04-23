@@ -1,6 +1,6 @@
 <?php
 /**
- * 首页
+ * 首页，可以理解为最外层的权限过滤器（类似Java的前置过滤器），load_controller相当于是继续接管控制权，类似配置的SpringMVC总入口xml配置。
  */
 require '../init.php';
 
