@@ -7,6 +7,7 @@
  * @return viod
  */
 !defined('PATH_ADMIN') && exit('Forbidden');
+// 这里的控制器载入，可以理解为手写了一个简易版的Java spring MVC。
 function load_controller() {
     try {
         $controller = 'ctl_' . ((empty($_GET['c'])) ? 'login' : $_GET['c']);
